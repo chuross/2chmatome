@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:padding="8dp">
+
+    <TextView
+        android:id="@+id/blog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_marginBottom="4dp"
+        android:text="blog" />
+
+    <RelativeLayout
+        android:id="@+id/entry_image_container"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="4dp">
+
+        <ProgressBar
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            style="?android:progressBarStyle" />
+
+        <ImageView
+            android:id="@+id/entry_image"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="title" />
+</LinearLayout>

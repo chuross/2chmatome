@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="feedly_feed_search_limit">50</integer>
+    <integer name="feedly_feed_entry_limit">30</integer>
+    <string name="disc_cache_size">100000000</string>
+    <integer name="refresh_interval_per_hour">6</integer>
+</resources>

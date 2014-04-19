@@ -2,26 +2,65 @@ apply plugin: 'android'
 
 android {
     compileSdkVersion 15
-    buildToolsVersion "19.0.3"
+    buildToolsVersion '19.0.3'
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 15
+        targetSdkVersion 19
         versionCode 1
-        versionName "1.0"
+        versionName '1.0'
+        testPackageName 'jp.fedom.android.testsample.test'
+        testInstrumentationRunner 'jp.fedom.android.testsample.test.AllTests'
     }
+
     buildTypes {
         release {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            aidl.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['src/assets']
+        }
+
+        androidTest {
+            java.srcDirs = ['src/androidTest/java']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'commons-io:commons-io:2.4'
+    //DI
+    compile 'org.roboguice:roboguice:2.0'
+    // commons
     compile 'commons-lang:commons-lang:2.6'
-    compile 'com.j256.ormlite:ormlite-core:4.48'
-    compile 'com.j256.ormlite:ormlite-android:4.48'
+    compile 'commons-beanutils:commons-beanutils:1.9.1'
+    compile 'com.google.guava:guava:17.0-rc2'
+    // httpclient for picasso
+    compile 'com.squareup.okhttp:okhttp:1.5.3'
+    // deferred
+    compile group: 'org.jdeferred', name: 'jdeferred-core', version: '1.2.1'
+    compile group: 'org.jdeferred', name: 'jdeferred-android-aar', version: '1.2.1'
+    // Android-Query
+    compile group: 'com.googlecode.android-query', name: 'android-query', version: '0.24.3'
+    // DB
+    compile project(':ActiveAndroid')
+    // Parser
+    compile 'net.arnx:jsonic:1.3.3'
+    // UI
+    compile 'com.android.support:support-v4:19.0.+'
+    compile 'com.etsy.android.grid:library:1.0.4'
+    compile group: 'com.squareup.picasso', name: 'picasso', version: '2.2.0'
 }

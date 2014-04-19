@@ -1,1 +1,1 @@
-include ':rssmatome'
+include ':rssmatome', ':ActiveAndroid'
