@@ -2,7 +2,7 @@ package com.chuross.rssmatome.domain.blog;
 
 import com.activeandroid.ActiveAndroid;
 import com.chuross.rssmatome.application.Application;
-import com.chuross.rssmatome.infrastructure.Utils.ConcurrentUtils;
+import com.chuross.rssmatome.infrastructure.utils.ConcurrentUtils;
 import com.chuross.rssmatome.infrastructure.android.query.AQuery;
 import com.chuross.rssmatome.infrastructure.api.feedly.Feed;
 import com.chuross.rssmatome.infrastructure.api.feedly.Feedly;

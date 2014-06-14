@@ -1,4 +1,4 @@
-package com.chuross.rssmatome.infrastructure.Utils;
+package com.chuross.rssmatome.infrastructure.utils;
 
 import com.chuross.rssmatome.infrastructure.android.logger.Logger;
 import com.chuross.rssmatome.infrastructure.android.logger.LoggerFactory;

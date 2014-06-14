@@ -3,7 +3,7 @@ package com.chuross.rssmatome.infrastructure.api.feedly;
 import android.content.Context;
 
 import com.chuross.rssmatome.R;
-import com.chuross.rssmatome.infrastructure.Utils.UrlUtils;
+import com.chuross.rssmatome.infrastructure.utils.UrlUtils;
 import com.chuross.rssmatome.infrastructure.api.AbstractApi;
 import com.chuross.rssmatome.infrastructure.api.Method;
 

@@ -3,7 +3,7 @@ package com.chuross.rssmatome.domain.entry;
 import com.activeandroid.ActiveAndroid;
 import com.chuross.rssmatome.application.Application;
 import com.chuross.rssmatome.domain.blog.BlogIdentity;
-import com.chuross.rssmatome.infrastructure.Utils.ConcurrentUtils;
+import com.chuross.rssmatome.infrastructure.utils.ConcurrentUtils;
 import com.chuross.rssmatome.infrastructure.android.query.AQuery;
 import com.chuross.rssmatome.infrastructure.api.feedly.Feedly;
 import com.chuross.rssmatome.infrastructure.api.feedly.Mixes;

@@ -7,7 +7,7 @@ import android.view.View;
 import com.androidquery.AbstractAQuery;
 import com.androidquery.callback.AjaxCallback;
 import com.androidquery.callback.AjaxStatus;
-import com.chuross.rssmatome.infrastructure.Utils.UrlUtils;
+import com.chuross.rssmatome.infrastructure.utils.UrlUtils;
 import com.chuross.rssmatome.infrastructure.android.logger.Logger;
 import com.chuross.rssmatome.infrastructure.android.logger.LoggerFactory;
 import com.chuross.rssmatome.infrastructure.api.Api;

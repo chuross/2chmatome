@@ -12,7 +12,7 @@ import com.activeandroid.ActiveAndroid;
 import com.chuross.rssmatome.R;
 import com.chuross.rssmatome.domain.blog.Blog;
 import com.chuross.rssmatome.domain.entry.Entry;
-import com.chuross.rssmatome.infrastructure.Utils.ConcurrentUtils;
+import com.chuross.rssmatome.infrastructure.utils.ConcurrentUtils;
 import com.chuross.rssmatome.infrastructure.android.query.AQuery;
 import com.chuross.rssmatome.infrastructure.database.blog.BlogHelper;
 import com.chuross.rssmatome.ui.adapter.EntryAdapter;

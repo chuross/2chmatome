@@ -2,7 +2,7 @@ package com.chuross.rssmatome.infrastructure.api;
 
 import android.content.Context;
 
-import com.chuross.rssmatome.infrastructure.Utils.UrlUtils;
+import com.chuross.rssmatome.infrastructure.utils.UrlUtils;
 
 import java.util.HashMap;
 import java.util.Map;
